@@ -4,8 +4,8 @@ import { connect, Provider } from 'react-redux';
 import axios from 'axios';
 import Nav from './Nav';
 import store from './store';
-import Groceries from './Groceries';
-import CreateForm from './CreateForm';
+import Groceries from './store/actions/Groceries';
+import CreateForm from './store/actions/CreateForm';
 
 
 

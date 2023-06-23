@@ -1,4 +1,5 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import logger from 'redux-logger';
 
 const initialState = {
   groceries: [],
@@ -19,6 +20,8 @@ const store = createStore((state = initialState, action)=> {
   }
   return state;
 });
+
+const middleware = applyMiddleware(logger);
 
 export default store;
 
